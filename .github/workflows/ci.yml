@@ -1,0 +1,32 @@
+name: CI — Test Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Tvastar Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run full test suite
+        env:
+          PYTHONIOENCODING: utf-8
+        working-directory: scripts
+        run: python3 test_all.py
+      - name: Syntax check all scripts
+        run: |
+          for f in scripts/*.py; do
+            python3 -m py_compile "$f" && echo "✓ $f" || exit 1
+          done
+      - name: Verify reference files
+        run: |
+          count=$(ls references/*.md | wc -l)
+          echo "Reference files: $count"
+          [ "$count" -ge 13 ] || exit 1
