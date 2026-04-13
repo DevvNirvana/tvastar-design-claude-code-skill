@@ -25,8 +25,8 @@
     </pattern>
 
     <filter id="glitch-shadow">
-      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#ff00ff" flood-opacity="0.8"/>
-      <feDropShadow dx="-4" dy="-4" stdDeviation="0" flood-color="#00ffff" flood-opacity="0.8"/>
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#ff00ff" flood-opacity="0.9"/>
+      <feDropShadow dx="-3" dy="-3" stdDeviation="0" flood-color="#00ffff" flood-opacity="0.9"/>
     </filter>
   </defs>
 
@@ -50,14 +50,14 @@
 
     <rect x="20" y="50" width="1000" height="230" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" stroke-dasharray="4 4"/>
 
-    <text x="520" y="150" font-family="Impact, sans-serif" font-size="90" fill="none" stroke="#ff00ff" stroke-width="2" text-anchor="middle" letter-spacing="8" opacity="0.6">TVASTAR</text>
-    <text x="516" y="150" font-family="Impact, sans-serif" font-size="90" fill="none" stroke="#00ffff" stroke-width="2" text-anchor="middle" letter-spacing="8" opacity="0.6">TVASTAR</text>
+    <text x="522" y="155" font-family="serif" font-size="100" fill="none" stroke="#ff00ff" stroke-width="2" text-anchor="middle" opacity="0.6">𝕿𝖛𝖆𝖘𝖙𝖆𝖗</text>
+    <text x="518" y="155" font-family="serif" font-size="100" fill="none" stroke="#00ffff" stroke-width="2" text-anchor="middle" opacity="0.6">𝕿𝖛𝖆𝖘𝖙𝖆𝖗</text>
     
-    <text x="518" y="150" font-family="Impact, sans-serif" font-size="90" fill="url(#chrome)" stroke="#ffffff" stroke-width="1" text-anchor="middle" letter-spacing="8" filter="url(#glitch-shadow)">TVASTAR</text>
+    <text x="520" y="155" font-family="serif" font-size="100" fill="url(#chrome)" stroke="#ffffff" stroke-width="1" text-anchor="middle" filter="url(#glitch-shadow)">𝕿𝖛𝖆𝖘𝖙𝖆𝖗</text>
     
-    <text x="518" y="200" font-family="monospace" font-size="22" fill="#e0eaff" text-anchor="middle" letter-spacing="3" font-weight="bold">FRONTEND DESIGN INTELLIGENCE FOR CLAUDE CODE</text>
+    <text x="520" y="210" font-family="monospace" font-size="22" fill="#e0eaff" text-anchor="middle" letter-spacing="2" font-weight="bold">FRONTEND DESIGN INTELLIGENCE FOR CLAUDE CODE</text>
 
-    <g transform="translate(190, 235)">
+    <g transform="translate(190, 245)">
       <rect x="0" y="0" width="180" height="35" fill="#ff00ff" stroke="#ffffff" stroke-width="2" />
       <text x="90" y="23" font-family="monospace" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">18 LIBRARIES</text>
       
