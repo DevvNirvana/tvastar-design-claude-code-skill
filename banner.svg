@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#b0b5c0" />
+      <stop offset="48%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#1a1c23" />
+      <stop offset="52%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#555d76" />
+    </linearGradient>
+
+    <linearGradient id="iridescent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00ff" />
+      <stop offset="50%" stop-color="#00ffff" />
+      <stop offset="100%" stop-color="#ffff00" />
+    </linearGradient>
+
+    <pattern id="halftone" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+      <circle cx="2" cy="2" r="1.5" fill="rgba(255, 0, 255, 0.4)"/>
+      <circle cx="8" cy="8" r="2" fill="rgba(0, 255, 255, 0.4)"/>
+    </pattern>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 255, 255, 0.15)" stroke-width="1" />
+    </pattern>
+
+    <filter id="glitch-shadow">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#ff00ff" flood-opacity="0.8"/>
+      <feDropShadow dx="-4" dy="-4" stdDeviation="0" flood-color="#00ffff" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="400" fill="#090a0f"/>
+
+  <g transform="translate(0, 100)">
+    <rect width="1200" height="300" fill="url(#grid)" />
+  </g>
+  
+  <rect width="1200" height="400" fill="url(#halftone)" opacity="0.6"/>
+
+  <g transform="translate(80, 50)">
+    <rect width="1040" height="300" fill="rgba(15, 15, 25, 0.85)" stroke="#00ffff" stroke-width="2"/>
+    
+    <rect width="1040" height="30" fill="url(#iridescent)"/>
+    <text x="15" y="20" font-family="monospace" font-size="14" fill="#000000" font-weight="bold">TVASTAR_CORE_SYSTEM.EXE</text>
+    
+    <circle cx="1015" cy="15" r="7" fill="#ff0055" stroke="#000" stroke-width="2"/>
+    <circle cx="990" cy="15" r="7" fill="#ffcc00" stroke="#000" stroke-width="2"/>
+    <circle cx="965" cy="15" r="7" fill="#00ccff" stroke="#000" stroke-width="2"/>
+
+    <rect x="20" y="50" width="1000" height="230" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <text x="520" y="150" font-family="Impact, sans-serif" font-size="90" fill="none" stroke="#ff00ff" stroke-width="2" text-anchor="middle" letter-spacing="8" opacity="0.6">TVASTAR</text>
+    <text x="516" y="150" font-family="Impact, sans-serif" font-size="90" fill="none" stroke="#00ffff" stroke-width="2" text-anchor="middle" letter-spacing="8" opacity="0.6">TVASTAR</text>
+    
+    <text x="518" y="150" font-family="Impact, sans-serif" font-size="90" fill="url(#chrome)" stroke="#ffffff" stroke-width="1" text-anchor="middle" letter-spacing="8" filter="url(#glitch-shadow)">TVASTAR</text>
+    
+    <text x="518" y="200" font-family="monospace" font-size="22" fill="#e0eaff" text-anchor="middle" letter-spacing="3" font-weight="bold">FRONTEND DESIGN INTELLIGENCE FOR CLAUDE CODE</text>
+
+    <g transform="translate(190, 235)">
+      <rect x="0" y="0" width="180" height="35" fill="#ff00ff" stroke="#ffffff" stroke-width="2" />
+      <text x="90" y="23" font-family="monospace" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">18 LIBRARIES</text>
+      
+      <rect x="230" y="0" width="180" height="35" fill="#00ffff" stroke="#ffffff" stroke-width="2" />
+      <text x="320" y="23" font-family="monospace" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">24 STYLES</text>
+      
+      <rect x="460" y="0" width="180" height="35" fill="#ffff00" stroke="#ffffff" stroke-width="2" />
+      <text x="550" y="23" font-family="monospace" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">86 LINT RULES</text>
+    </g>
+  </g>
+</svg>
